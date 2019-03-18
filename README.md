@@ -7,6 +7,8 @@ geovane.ns@msn.com
 - C++
 - PHP
 - (HTML, CSS, JavaScript)
+- Android
+## Interesses
 - Desenvolvimento Android
 ## Projetos
 https://github.com/GeovaneNarciso
