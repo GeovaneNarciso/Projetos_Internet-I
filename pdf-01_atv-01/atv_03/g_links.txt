@@ -1,0 +1,11 @@
+http://www.google.com.br/imghp?hl=pt-BR&tab=wi
+http://maps.google.com.br/maps?hl=pt-BR&tab=wl
+https://play.google.com/?hl=pt-BR&tab=w8
+http://www.youtube.com/?gl=BR&tab=w1
+http://news.google.com.br/nwshp?hl=pt-BR&tab=wn
+https://mail.google.com/mail/?tab=wm
+https://drive.google.com/?tab=wo
+https://www.google.com.br/intl/pt-BR/about/products?tab=wh
+http://www.google.com.br/history/optout?hl=pt-BR
+https://accounts.google.com/ServiceLogin?hl=pt-BR&passive=true&continue=http://www.google.com/
+http://www.google.com/setprefdomain?prefdom=BR&prev=http://www.google.com.br/&sig=K_NAuSSgwQkde40fH98jbNf3nzdxQ%3D
