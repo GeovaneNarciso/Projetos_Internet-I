@@ -1,17 +1,15 @@
 def main():
 
     import requests
-    from lxml import html
+    import re
 
     response = requests.get(input("Informe a url (http://google.com): \n"))
-    webpage = html.fromstring(response.content)
-
-    links_list = webpage.xpath('//a/@href')
+    html = requests.get(response.url).text
+    urls = re.findall('(?<=href=["\'])https?://.+?(?=["\'])', html)
 
     links_txt = ""
-    for link in links_list:
-        if 'http' in link:
-            links_txt += link + '\n'
+    for tag in urls:
+        links_txt += tag + '\n'
 
     nome_arquivo = input("Informe o nome do arquivo: (exemplo.txt) \n\n")
     txt = open(nome_arquivo, "w")
