@@ -9,7 +9,7 @@ Autores:
 
 
 def main():
-    url = input("Informe a URL: ")  # exemplo de url: 'https://www.ojogos.com.br/'
+    url = input("Informe a URL: ")  # exemplo de url: 'https://pt.wikipedia.org/wiki/Educa%C3%A7%C3%A3o'
     keyword = input("Informe a palavra-chave: ")
     depth = int(input("Informe a profundidade da busca: "))
 

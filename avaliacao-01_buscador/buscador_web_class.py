@@ -48,11 +48,11 @@ def textos_da_pag(html_text):
     return text
 
 
-def get_links(html, prioridade=None, max_links=None):
+def get_links(html, relevancia=None, max_links=None):
     """
 
    :param html: objeto BeautifulSoup
-   :param prioridade: palavra chave que pode estar em um link, para que eles sejam os primeiros
+   :param relevancia: palavra chave que pode estar em um link, para que eles sejam os primeiros
    :param max_links: limite de links para serem retornados
    :return: lista de links dentro da pagina
    """
@@ -61,10 +61,11 @@ def get_links(html, prioridade=None, max_links=None):
     all_links = html.find_all('a')
 
     #  primeiros links são os que possuem prioridade em alguma parte do link
-    if prioridade is not None:
+    if relevancia is not None:
         for i in all_links:
             href = str(i)
-            if prioridade in href:
+
+            if relevancia in href:
 
                 if 'href="https://' in href:
                     href = href[href.find('href="https://') + len('href="'):]
@@ -131,11 +132,11 @@ class Buscador:
 
     def search(self):
         print('--------------------------- COMEÇO DA BUSCA ---------------------------')
-        self._search(self.url)
+        self.__search(self.url)
         print('--------------------------- FIM DA BUSCA ---------------------------')
 
     # private method _
-    def _search(self, url, depth=0):
+    def __search(self, url, depth=0):
 
         if depth < self.max_depth:
             print('\nprofundidade ', depth, url)
@@ -170,4 +171,4 @@ class Buscador:
 
                         novos_links = get_links(html, self.keyword, self.max_links_por_pag)
                         for link in novos_links:
-                            self._search(link, depth + 1)
+                            self.__search(link, depth + 1)
