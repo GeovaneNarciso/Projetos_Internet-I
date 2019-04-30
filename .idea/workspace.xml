@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f0b7daf-bbc1-4406-9ff0-08cce7369ff7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/geova.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto_django/myproject/myapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/projeto_django/myproject/myapp/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto_django/myproject/myapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/projeto_django/myproject/myapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto_django/myproject/myapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/projeto_django/myproject/myapp/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,23 +17,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="302">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myapp/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myapp/admin.py">
+        <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myapp/script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="42">
+              <caret line="3" column="103" selection-start-line="3" selection-start-column="103" selection-end-line="3" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -69,13 +81,18 @@
         <option value="$PROJECT_DIR$/avaliacao-01_buscador/buscador_web.py" />
         <option value="$PROJECT_DIR$/avaliacao-01_buscador/buscador_web_class.py" />
         <option value="$PROJECT_DIR$/projeto_django/myproject/myapp/admin.py" />
+        <option value="$PROJECT_DIR$/projeto_django/mysite/scripts/delete_all_questions.py" />
+        <option value="$PROJECT_DIR$/projeto_django/myproject/scripts/crud_blog.py" />
+        <option value="$PROJECT_DIR$/projeto_django/myproject/script_blog.py" />
+        <option value="$PROJECT_DIR$/projeto_django/myproject/myapp/script.py" />
         <option value="$PROJECT_DIR$/projeto_django/myproject/myapp/models.py" />
+        <option value="$PROJECT_DIR$/projeto_django/myproject/myapp/tests.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="687" />
-    <option name="width" value="1240" />
+    <option name="x" value="708" />
+    <option name="width" value="1219" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
@@ -108,6 +125,13 @@
               <item name="myproject" type="462c0819:PsiDirectoryNode" />
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Projetos_Internet-I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projetos_Internet-I" type="462c0819:PsiDirectoryNode" />
+              <item name="projeto_django" type="462c0819:PsiDirectoryNode" />
+              <item name="myproject" type="462c0819:PsiDirectoryNode" />
+              <item name="myproject" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -132,80 +156,99 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.buscador_web">
-    <configuration name="buscador_web" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Doctests in tests">
+    <configuration name="Doctests in Blog (2)" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <module name="Projetos_Internet-I" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/avaliacao-01_buscador" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/projeto_django/myproject/myapp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/avaliacao-01_buscador/buscador_web.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/projeto_django/myproject/myapp/tests.py" />
+      <option name="CLASS_NAME" value="Blog" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="buscador_web_class" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Doctests in tests" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <module name="Projetos_Internet-I" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/avaliacao-01_buscador" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/projeto_django/myproject/myapp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/avaliacao-01_buscador/buscador_web_class.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/projeto_django/myproject/myapp/tests.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="teste_buscador" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for myapp.tests.BlogTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Projetos_Internet-I" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/avaliacao-01_buscador" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/projeto_django/myproject" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/avaliacao-01_buscador/teste_buscador.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;myapp.tests.BlogTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for tests.BlogTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Projetos_Internet-I" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/projeto_django/myproject/myapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.BlogTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for tests.BlogTest.testRemove" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Projetos_Internet-I" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/projeto_django/myproject/myapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.BlogTest.testRemove&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.buscador_web" />
-      <item itemvalue="Python.buscador_web_class" />
-      <item itemvalue="Python.teste_buscador" />
+      <item itemvalue="Python tests.Doctests in Blog (2)" />
+      <item itemvalue="Python tests.Doctests in tests" />
+      <item itemvalue="Python tests.Unittests for myapp.tests.BlogTest" />
+      <item itemvalue="Python tests.Unittests for tests.BlogTest" />
+      <item itemvalue="Python tests.Unittests for tests.BlogTest.testRemove" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.buscador_web" />
-        <item itemvalue="Python.buscador_web_class" />
-        <item itemvalue="Python.teste_buscador" />
+        <item itemvalue="Python tests.Doctests in tests" />
+        <item itemvalue="Python tests.Unittests for myapp.tests.BlogTest" />
+        <item itemvalue="Python tests.Unittests for tests.BlogTest.testRemove" />
+        <item itemvalue="Python tests.Unittests for tests.BlogTest" />
+        <item itemvalue="Python tests.Doctests in Blog (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -222,23 +265,55 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_tests_BlogTest - 2019.04.25 at 15h 45m 11s.xml">
+      <configuration name="Unittests for tests.BlogTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_tests_BlogTest_testRemove - 2019.04.25 at 15h 45m 30s.xml">
+      <configuration name="Unittests for tests.BlogTest.testRemove" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_tests - 2019.04.25 at 15h 56m 38s.xml">
+      <configuration name="Doctests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_tests - 2019.04.26 at 10h 22m 41s.xml">
+      <configuration name="Doctests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_tests - 2019.04.26 at 10h 25m 55s.xml">
+      <configuration name="Doctests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_tests - 2019.04.26 at 10h 26m 46s.xml">
+      <configuration name="Doctests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_tests - 2019.04.26 at 10h 36m 57s.xml">
+      <configuration name="Doctests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_tests - 2019.04.26 at 10h 40m 26s.xml">
+      <configuration name="Doctests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_myapp_tests_BlogTest - 2019.04.26 at 10h 40m 48s.xml">
+      <configuration name="Unittests for myapp.tests.BlogTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_tests - 2019.04.26 at 10h 42m 20s.xml">
+      <configuration name="Doctests in tests" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="550" y="0" width="992" height="830" extended-state="0" />
+    <frame x="567" y="0" width="975" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3043933" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3056443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34512022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3390558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32761088" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32904148" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49954253" visible="true" weight="0.38197425" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50045747" side_tool="true" weight="0.38088444" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32904148" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -354,9 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myapp/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/avaliacao-01_buscador/buscador_paste_bin.py" />
     <entry file="file://$PROJECT_DIR$/avaliacao-01_buscador/buscador_web.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -369,13 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="623">
           <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projeto_django/mysite/pools/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -423,33 +488,81 @@
     <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myproject/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myproject/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myapp/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myapp/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myapp/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="154">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myproject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projeto_django/mysite/pools/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projeto_django/mysite/scripts/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/projeto_django/mysite/scripts/delete_all_questions.py" />
+    <entry file="file://$PROJECT_DIR$/projeto_django/myproject/scripts/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/projeto_django/myproject/scripts/crud_blog.py" />
+    <entry file="file://$PROJECT_DIR$/projeto_django/myproject/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projeto_django/myproject/script_blog.py" />
+    <entry file="file://$PROJECT_DIR$/projeto_django/connectdin/perfis/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projeto_django/mysite/pools/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myapp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myproject/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/myapp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myapp/script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="3" column="103" selection-start-line="3" selection-start-column="103" selection-end-line="3" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="302">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projeto_django/myproject/myapp/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

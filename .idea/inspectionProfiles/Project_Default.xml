@@ -5,6 +5,9 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="projeto_django.myproject.myapp.admin.*" />
+          <option value="projeto_django.myproject.myapp.tests.*" />
+          <option value="projeto_django.myproject.myapp.models.Blog.*" />
+          <option value="projeto_django.myproject.myapp.models.Entry.*" />
         </list>
       </option>
     </inspection_tool>
