@@ -84,11 +84,17 @@ class PessoaFisica(models.Model):
 
 
 class Blog(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, unique=True)
+
+    def __str__(self):
+        return self.name
 
 
 class Entry(models.Model):
     headline = models.CharField(max_length=60)
     body_text = models.CharField(max_length=255)
     pub_date = models.DateField()
-    blog = models.ForeignKey(Blog, on_delete=models.CASCADE)
+    blog = models.ForeignKey(Blog, blank=True, null=True, on_delete='CASCADE')
+
+    def __str__(self):
+        return self.headline
