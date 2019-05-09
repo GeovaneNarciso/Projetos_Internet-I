@@ -8,6 +8,7 @@
           <option value="projeto_django.myproject.myapp.tests.*" />
           <option value="projeto_django.myproject.myapp.models.Blog.*" />
           <option value="projeto_django.myproject.myapp.models.Entry.*" />
+          <option value="projeto_django.rede_social.rede.admin.rede" />
         </list>
       </option>
     </inspection_tool>
