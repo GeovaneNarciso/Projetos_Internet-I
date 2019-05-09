@@ -59,6 +59,9 @@ class Pizza(models.Model):
     nome = models.CharField(max_length=50)
     coberturas = models.ManyToManyField(Cobertura)
 
+    def __str__(self):
+        return self.nome
+
 # ---------------------------------------------------------
 
 
@@ -94,7 +97,46 @@ class Entry(models.Model):
     headline = models.CharField(max_length=60)
     body_text = models.CharField(max_length=255)
     pub_date = models.DateField()
-    blog = models.ForeignKey(Blog, blank=True, null=True, on_delete='CASCADE')
+    blog = models.ForeignKey(Blog, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.headline
+
+
+# ---------------------------------------------------------
+
+
+class Person2(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+
+
+class Group(models.Model):
+    name = models.CharField(max_length=50)
+    members = models.ManyToManyField(Person2, through='Membership', through_fields=('group', 'person'))
+
+    def __str__(self):
+        return self.name
+
+
+class Membership(models.Model):
+    date_joined = models.DateField()
+    inviter = models.ForeignKey(Person2, on_delete=models.CASCADE, related_name='membership_invites')
+    invite_reason = models.CharField(max_length=30)
+    person = models.ForeignKey(Person2, on_delete=models.CASCADE)
+    group = models.ForeignKey(Group, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.person.name
+
+# ---------------------------------------------------------
+
+
+class Perfil(models.Model):
+    nome = models.CharField(max_length=50)
+    amigos = models.ManyToManyField('self')
+
+    def __str__(self):
+        return self.nome

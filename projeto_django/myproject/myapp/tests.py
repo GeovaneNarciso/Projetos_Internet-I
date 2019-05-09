@@ -28,7 +28,7 @@ class BlogTest(TestCase):
         blogs = Blog.objects.all()
         entrys = Entry.objects.all()
         # entry = Entry.objects.get()
-
+    """
         # ADD
         b = Blog.objects.get(name='Meu Blog 2')
         e = Entry.objects.get(headline='Dia 1')
@@ -45,8 +45,12 @@ class BlogTest(TestCase):
         # CLEAR
         b.entry_set.clear()
         printar(self)
-    """
+    
         # SET
+        e_1 = Entry.objects.get(headline='Dia 1')
+        e_2 = Entry.objects.get(headline='Dia 2')
+        e_3 = Entry.objects.get(headline='Dia 3')
+        entrys_list = [e_1, e_2, e_3]
         e.related_set.set(headline='Dia Um')
         printar(self)
     """
