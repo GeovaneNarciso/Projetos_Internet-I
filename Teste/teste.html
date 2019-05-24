@@ -5,5 +5,28 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        <p>
+            django-admin.py startproject (nome_projeto)
+
+            python manage.py migrate
+
+            setting.py >
+            DATABASES = {
+                'default': {
+                    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                    'NAME': 'RedeSocial',
+                    'USER': 'postgres',
+                    'PASSWORD': 'postgres123',
+                    'HOST': 'localhost',
+                    'PORT': '5432',
+                }
+            }
+
+            python manage.py migrate
+
+            python manage.py startapp (nome_aplicação)
+
+            setting.py > Colocar nome do app em INSTALLED_APPS
+        </p>
     </body>
 </html>

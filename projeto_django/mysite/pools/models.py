@@ -1,8 +1,19 @@
 from django.db import models
 
 
-class Question:
-    def __init__(self, id, question_text, pub_date):
-        self.id = id
-        self.question_text = question_text
-        self.pub_date = pub_date
+class Question(models.Model):
+    question_text = models.CharField(max_length=255)
+    closed = models.BooleanField(default=False)
+    pub_date = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return self.question_text
+
+
+class Choice(models.Model):
+    choice_text = models.CharField(max_length=255)
+    votes = models.IntegerField(default=1)
+    question = models.ForeignKey(Question, null=True, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.choice_text

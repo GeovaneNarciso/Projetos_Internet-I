@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>ConnectedIn</title>
+        <link href="{% static 'styles/bootstrap.css' %}" rel="stylesheet">
+        <link href="{% static 'styles/main.css' %}" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li class=""><a href="{% url 'index' %}">NOME</a></li>
+                <li class=""><a href="/logout/">Logout</a></li>
+            </ul>
+            <h3 class="text-muted">ConnectedIn</h3>
+        </div>
+        <h1>Bem-vindo ao ConnectedIn!</h1>
+        {% if perfis %}
+            <ul>
+                {% for perfil in perfis %}
+                    <li>
+                        <a href="{% url 'exibir' perfil.id %}">
+                            {{ perfil.nome }} / {{ perfil.email }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Nenhum perfil encontrado.</p>
+        {% endif %}
+    </body>
+</html>

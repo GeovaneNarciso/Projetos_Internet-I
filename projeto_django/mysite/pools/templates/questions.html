@@ -3,12 +3,40 @@
     <head>
         <meta charset="utf-8">
         <title>MySite</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
     </head>
     <body>
+        <div class="container">
         <h1>Questions</h1>
-        <ul>
-            <li>{{ question.question_text }}</li>
-            <li>Publish Date: {{ question.pub_date }}</li>
-        </ul>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>{{ question.question_text }}</th>
+                    </tr>
+                    <tr>
+                        <th>Choice</th>
+                        <th>Votes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if choices %}
+                        {% for choice in choices %}
+                            {% if choice.question.id == question.id %}
+                                <tr>
+                                    <th>{{ choice.choice_text }}</th>
+                                    <th>{{ choice.votes }}</th>
+                                </tr>
+                            {% endif %}
+                        {% endfor %}
+                        {% else %}
+                            <tr>
+                                <th><p>No choices found.</p></th>
+                            </tr>
+                        {% endif %}
+                </tbody>
+            </table>
+    </div>
     </body>
 </html>

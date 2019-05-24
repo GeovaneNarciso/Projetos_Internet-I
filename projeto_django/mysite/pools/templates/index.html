@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="utf-8">
         <title>MySite</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
     </head>
     <body>
-        <h1>Welcome MySite!</h1>
+
+    <div class="container">
+        <h1>Bem vindo ao MySite!</h1>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Pub. Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if questions %}
+                        {% for question in questions %}
+                            <tr>
+                                <th><a href="{% url 'exibir' question.id %}">
+                                    {{ question.question_text }}</a></th>
+                                <th>{{ question.pub_date }}</th>
+                            </tr>
+                            {% if choices %}
+                                {% for choice in choices %}
+                                    {% if choice.question.id == question.id %}
+                                        <tr>
+                                            <th>{{ choice.choice_text }}</th>
+                                        </tr>
+                                    {% endif%}
+                                {% endfor %}
+                                {% else %}
+                                    <tr>
+                                        <th><p>No choices found.</p></th>
+                                    </tr>
+                            {% endif %}
+                        {% endfor %}
+                        {% else %}
+                            <p>No questions found.</p>
+                        {% endif %}
+                </tbody>
+            </table>
+    </div>
     </body>
 </html>
