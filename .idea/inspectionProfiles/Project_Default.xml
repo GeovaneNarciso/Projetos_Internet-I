@@ -9,8 +9,20 @@
           <option value="projeto_django.myproject.myapp.models.Blog.*" />
           <option value="projeto_django.myproject.myapp.models.Entry.*" />
           <option value="projeto_django.rede_social.rede.admin.rede" />
+          <option value="projeto_django.connectedin.perfis.models.Perfil.objects" />
+          <option value="projeto_django.connectedin.connectedin.urls.perfis" />
+          <option value="projeto_django.connectedin.connectedin.urls.views" />
+          <option value="perfis" />
+          <option value="projeto_django.connectedin.perfis.models.Convite.objects" />
+          <option value="projeto_django.mysite.pools.models.Question.objects" />
+          <option value="projeto_django.mysite.mysite.urls.pools" />
         </list>
       </option>
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
     </inspection_tool>
   </profile>
 </component>
