@@ -9,34 +9,53 @@
     </head>
     <body>
         <div class="container">
-        <h1>Questions</h1>
+        <h1>Question</h1>
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th>{{ question.question_text }}</th>
-                    </tr>
-                    <tr>
-                        <th>Choice</th>
-                        <th>Votes</th>
+                        <th bgcolor="lightgray">{{ question.question_text }}</th>
+                        {% if question.closed %}
+                            <th><a href="{% url 'results' question.id %}">Ver resultado</a></th>
+                        {% else %}
+                            <th>Votação</th>
+                        {% endif %}
+                        <th><a href="{% url 'manage' question.id %}">|||</a></th>
                     </tr>
                 </thead>
                 <tbody>
                     {% if choices %}
-                        {% for choice in choices %}
-                            {% if choice.question.id == question.id %}
+                        <form action="{% url 'vote' question.id %}" method="post">
+                            {% csrf_token %}
+                            {% for choice in choices %}
                                 <tr>
                                     <th>{{ choice.choice_text }}</th>
-                                    <th>{{ choice.votes }}</th>
+                                    {% if not question.closed %}
+                                        <th>
+                                            <input type="radio" name="choice" id="choice{{ forloop.counter }}"
+                                                   value="{{ choice.id }}" />
+                                            <label for="choice{{ forloop.counter }}"></label><br />
+                                        </th>
+                                    {% endif %}
                                 </tr>
+                            {% endfor %}
+                            {% if not question.closed %}
+                                <th></th>
+                                <th><input type="submit" value="Votar" /></th>
+                                {% if mensagem %}
+                                    <tr>
+                                        <th><p style="color:red;"><strong>{{ mensagem }}</strong></p></th>
+                                    </tr>
+                                {% endif %}
                             {% endif %}
-                        {% endfor %}
-                        {% else %}
-                            <tr>
-                                <th><p>No choices found.</p></th>
-                            </tr>
-                        {% endif %}
+                        </form>
+                    {% else %}
+                        <tr>
+                            <th><p>No choices found.</p></th>
+                        </tr>
+                    {% endif %}
                 </tbody>
             </table>
-    </div>
+            <p align="center"><a href="{% url 'index' %}">Home</a></p>
+        </div>
     </body>
 </html>

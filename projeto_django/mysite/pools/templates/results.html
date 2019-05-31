@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>MySite</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
+        <script language="JavaScript">
+            function percentual(n1, n2) {
+                return (n1 / n2) * 100
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Question Results</h1>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>{{ question.question_text }}</th>
+                    </tr>
+                    <tr>
+                        <th>Choice</th>
+                        <th>Votes</th>
+                        <th>Percentual</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if choices %}
+                        {% for choice in choices %}
+                            <tr>
+                                <th>{{ choice.choice_text }}</th>
+                                <th>{{ choice.votes }}</th>
+                                <th>
+                                    <script language="JavaScript">
+                                        document.write(
+                                        percentual({{ choice.votes }}, {{ qtd_votes_question }}) + " %")
+                                    </script>
+                                </th>
+                            </tr>
+                        {% endfor %}
+                        {% else %}
+                            <tr>
+                                <th><p>No choices found.</p></th>
+                            </tr>
+                        {% endif %}
+                </tbody>
+            </table>
+            <p align="center"><a href="{% url 'index' %}">Home</a></p>
+        </div>
+    </body>
+</html>

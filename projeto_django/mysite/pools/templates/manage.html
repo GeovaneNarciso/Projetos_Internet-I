@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>MySite</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+        <h1>Question Manage</h1>
+        <h3>{{ question.question_text }}</h3>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th bgcolor="lightgray">Escolhas</th>
+                        <th>add/remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if in_choices %}
+                        {% for choice in in_choices %}
+                            <form class="success" action="/question/{{question.id}}/remove/{{ choice.id }}/" method="post">
+                                {% csrf_token %}
+                                <tr>
+                                    <th>{{ choice.choice_text }}</th>
+                                    <th>
+                                        <input type="hidden" name="choice" id="choice{{ forloop.counter }}"
+                                                   value="{{ choice.id }}" />
+                                        <input type="submit" value="Remover"/>
+                                    </th>
+                                </tr>
+                            </form>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <th><p>No add choices found.</p></th>
+                        </tr>
+                    {% endif %}
+                    {% if out_choices %}
+                        {% for choice2 in out_choices %}
+                            <form class="success" action="/question/{{question.id}}/add/{{ choice2.id }}/" method="post">
+                                {% csrf_token %}
+                                <tr>
+                                    <th>{{ choice2.choice_text }}</th>
+                                    <th>
+                                        <input type="hidden" name="choice2" id="choice2{{ forloop.counter }}"
+                                                   value="{{ choice2.id }}" />
+                                        <input type="submit" value="Adicionar"/>
+                                    </th>
+                                </tr>
+                            </form>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <th><p>No out choices found.</p></th>
+                        </tr>
+                    {% endif %}
+                    <tr><th></th></tr><tr><th></th></tr>
+                        <tr>
+                            {% if question.closed %}
+                                <th bgcolor="lightgray">Votação Encerrada</th>
+                                <th><a href="{% url 'alter_status' question.id %}">Abrir votação</a></th>
+                            {% else %}
+                                <th bgcolor="lightgray">Votação Aberta</th>
+                                <th><a href="{% url 'alter_status' question.id %}">Encerrar votação</a></th>
+                            {% endif %}
+                        </tr>
+                </tbody>
+            </table>
+            <p align="center"><a href="{% url 'index' %}">Home</a></p>
+        </div>
+    </body>
+</html>

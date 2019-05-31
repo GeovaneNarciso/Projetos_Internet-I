@@ -21,4 +21,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('question/<int:question_id>', views.exibir, name='exibir'),
+    path('question/<int:question_id>/result/', views.results, name='results'),
+    path('question/<int:question_id>/vote/', views.vote, name='vote'),
+    path('question/<int:question_id>/manage/', views.manage, name='manage'),
+    path('question/<int:question_id>/remove/<int:choice_id>/', views.remove, name='remove'),
+    path('question/<int:question_id>/alter_status/', views.alter_status, name='alter_status'),
+    path('question/<int:question_id>/add/<int:choice_id>/', views.add, name='add')
 ]
