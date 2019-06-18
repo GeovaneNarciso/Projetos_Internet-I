@@ -28,7 +28,7 @@
                                     <th>
                                         <input type="hidden" name="choice" id="choice{{ forloop.counter }}"
                                                    value="{{ choice.id }}" />
-                                        <input type="submit" value="Remover"/>
+                                        <input class="ok" type="submit" value="Remover"/>
                                     </th>
                                 </tr>
                             </form>
@@ -38,6 +38,15 @@
                             <th><p>No add choices found.</p></th>
                         </tr>
                     {% endif %}
+                    <script type="text/javascript">
+                        var elems = document.getElementsByClassName('ok');
+                        var confirmIt = function (e) {
+                            if (!confirm('Are you sure?')) e.preventDefault();
+                        };
+                        for (var i = 0, l = elems.length; i < l; i++) {
+                            elems[i].addEventListener('click', confirmIt, false);
+                        }
+                    </script>
                     {% if out_choices %}
                         {% for choice2 in out_choices %}
                             <form class="success" action="/question/{{question.id}}/add/{{ choice2.id }}/" method="post">
@@ -61,11 +70,20 @@
                         <tr>
                             {% if question.closed %}
                                 <th bgcolor="lightgray">Votação Encerrada</th>
-                                <th><a href="{% url 'alter_status' question.id %}">Abrir votação</a></th>
+                                <th><a href="{% url 'alter_status' question.id %}" class="ok2">Abrir votação</a></th>
                             {% else %}
                                 <th bgcolor="lightgray">Votação Aberta</th>
-                                <th><a href="{% url 'alter_status' question.id %}">Encerrar votação</a></th>
+                                <th><a href="{% url 'alter_status' question.id %}" class="ok2">Encerrar votação</a></th>
                             {% endif %}
+                            <script type="text/javascript">
+                                var elems = document.getElementsByClassName('ok2');
+                                var confirmIt = function (e) {
+                                    if (!confirm('Are you sure?')) e.preventDefault();
+                                };
+                                for (var i = 0, l = elems.length; i < l; i++) {
+                                    elems[i].addEventListener('click', confirmIt, false);
+                                }
+                            </script>
                         </tr>
                 </tbody>
             </table>
