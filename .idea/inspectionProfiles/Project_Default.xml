@@ -1,7 +1,7 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
-    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="ignoredIdentifiers">
         <list>
           <option value="projeto_django.myproject.myapp.admin.*" />
@@ -16,6 +16,14 @@
           <option value="projeto_django.connectedin.perfis.models.Convite.objects" />
           <option value="projeto_django.mysite.pools.models.Question.objects" />
           <option value="projeto_django.mysite.mysite.urls.pools" />
+          <option value="projeto_django.myforms.myforms.urls.myforms" />
+          <option value="projeto_django.myforms.posts.models.Post.objects" />
+          <option value="projeto_django.myforms.myforms.urls.posts" />
+          <option value="projeto_django.editora.editora.forms.models" />
+          <option value="projeto_django.editora.editora.forms.Author" />
+          <option value="projeto_django.editora.editora.forms.Book" />
+          <option value="projeto_django.editora.publish.models.Book.objects" />
+          <option value="projeto_django.editora.editora.urls.publish" />
         </list>
       </option>
     </inspection_tool>
