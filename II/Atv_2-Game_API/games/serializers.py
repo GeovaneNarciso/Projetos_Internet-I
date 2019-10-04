@@ -8,14 +8,16 @@ class GameSerializer(serializers.ModelSerializer):
         model = Game
         fields = ('id', 'name', 'release_date', 'game_category')
 
-    def validate_name(self, data):
+    @staticmethod
+    def validate_name(data):
         game = Game.objects.filter(name=data)
         if game:
             msg = "Jogos não podem ter nomes iguais."
             raise serializers.ValidationError(msg)
         return data
 
-    def validate_delete(self, game):
+    @staticmethod
+    def validate_delete(game):
         if game.release_date >= datetime.now():
             return True
         else:
