@@ -14,6 +14,8 @@ class AccountSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(msg)
         return data
 
-    def validate_creation_date(self):
-        pass
-
+    '''@staticmethod
+    def validate_creation_date(data):
+        if data:
+            print(data)
+        return data'''

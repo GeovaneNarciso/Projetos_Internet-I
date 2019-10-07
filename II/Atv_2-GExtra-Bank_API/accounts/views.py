@@ -38,6 +38,8 @@ def account_detail(request, pk):
     elif request.method == 'PATCH':
         account_serializer = AccountSerializer(account, data=request.data, partial=True)
         if account_serializer.is_valid():
+            if "owner" in request.data:
+                return Response(account_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
             account_serializer.save()
             return Response(account_serializer.data)
         return Response(account_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
