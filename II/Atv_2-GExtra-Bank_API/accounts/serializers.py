@@ -14,6 +14,9 @@ class AccountSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(msg)
         return data
 
-    def validate_creation_date(self):
-        pass
-
+    """@staticmethod
+    def validate_creation_data(data):
+        if data["creation_date"]:
+            msg = "Não é permitido informar uma data."
+            raise serializers.ValidationError(msg)
+        return data"""

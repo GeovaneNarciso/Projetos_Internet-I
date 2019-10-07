@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af2b11e8-5c7b-430c-9b6b-cadcd04fe746" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/.idea/dictionaries/Geovane.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/.idea/dictionaries/Geovane.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/.idea/dictionaries/Geovane.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/bank/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/bank/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/accounts/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Atv_2-GExtra-Bank_API/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamesapi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gamesapi/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/games/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="414">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -47,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gamesapi/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="108">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -56,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/games/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="185">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#49#82#0" expanded="true" />
               </folding>
@@ -81,14 +74,14 @@
         <option value="$PROJECT_DIR$/games/serializers.py" />
         <option value="$PROJECT_DIR$/games/models.py" />
         <option value="$PROJECT_DIR$/gamesapi/settings.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1048" />
+    <option name="x" value="675" />
+    <option name="width" value="1255" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -97,25 +90,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Atv_2-Game_API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Atv_2-Game_API" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Atv_2-Game_API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Atv_2-Game_API" type="462c0819:PsiDirectoryNode" />
-              <item name="gamesapi" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -148,7 +123,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="782" height="838" extended-state="0" />
+    <frame x="540" y="0" width="1004" height="832" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.31241745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -166,7 +141,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Terminal" order="3" sideWeight="0.49925596" weight="0.9585635" />
+      <window_info active="true" anchor="right" id="Terminal" order="3" sideWeight="0.49925596" visible="true" weight="0.9577167" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -189,6 +164,13 @@
     <entry file="file://$PROJECT_DIR$/gamesapi/settings.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/games/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -196,9 +178,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/games/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gamesapi/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="108">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -208,20 +200,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/games/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="185">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#49#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
