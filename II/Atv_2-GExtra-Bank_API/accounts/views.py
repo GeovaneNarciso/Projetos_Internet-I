@@ -15,6 +15,7 @@ def account_list(request):
     elif request.method == 'POST':
         accounts_serializer = AccountSerializer(data=request.data)
         if accounts_serializer.is_valid():
+
             if "creation_date" in request.data:
                 msg = {"message": "Não é necessário informar a data de criação."}
                 return Response(msg, status=status.HTTP_406_NOT_ACCEPTABLE)
