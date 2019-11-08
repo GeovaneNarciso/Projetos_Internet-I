@@ -1,0 +1,21 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="socialnetwork.blog.models.Post.objects" />
+          <option value="models.Profile.objects" />
+          <option value="models.Profile.DoesNotExist" />
+          <option value="views.ProfileList" />
+          <option value="views.*" />
+          <option value="models.Post.*" />
+          <option value="models.Comment.*" />
+          <option value="rest_framework.serializers.PostSerializer" />
+          <option value="rest_framework.serializers.CommentSerializer" />
+          <option value="models.Address.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
