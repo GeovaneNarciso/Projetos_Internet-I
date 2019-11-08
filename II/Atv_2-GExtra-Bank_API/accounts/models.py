@@ -7,7 +7,7 @@ class Account(models.Model):
     creation_date = models.DateField(auto_now_add=True)
 
     class Meta:
-        ordering = ('owner',)
+        ordering = ('id',)
 
     def __str__(self):
         return self.owner

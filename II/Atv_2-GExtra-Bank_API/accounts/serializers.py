@@ -7,16 +7,27 @@ class AccountSerializer(serializers.ModelSerializer):
         model = Account
         fields = ('id', 'owner', 'balance', 'creation_date')
 
-    @staticmethod
-    def validate_balance(data):
-        if data < 0:
-            msg = "Saldo não pode ser negativo."
+    def create(self, validated_data):
+        if validated_data["balance"] < 0:
+            msg = {"message": "Não é permitido saldo negativo."}
             raise serializers.ValidationError(msg)
-        return data
+        return Account.objects.create(**validated_data)
 
-    """@staticmethod
-    def validate_creation_data(data):
-        if data["creation_date"]:
-            msg = "Não é permitido informar uma data."
+    def update(self, instance, validated_data):
+        if "owner" in validated_data:
+            msg = {"message": "Apenas o saldo pode ser atualizado."}
             raise serializers.ValidationError(msg)
-        return data"""
+        if validated_data["balance"] == 0:
+            msg = {"message": "Valor não pode ser zero."}
+            raise serializers.ValidationError(msg)
+        elif validated_data["balance"] > 0:
+            instance.balance += validated_data["balance"]
+            instance.save()
+        elif validated_data["balance"] < 0:
+            instance.balance += validated_data["balance"]
+            if instance.balance < 0:
+                msg = {"message": "Saldo insuficiente."}
+                raise serializers.ValidationError(msg)
+            else:
+                instance.save()
+        return instance
